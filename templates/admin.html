@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <p>IT Help Desk Management</p>
+    </header>
+
+    <div class="dashboard">
+
+        <div class="dashboard-card">
+            <h3>Total Tickets</h3>
+            <p>{{ total }}</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Open</h3>
+            <p>{{ open_tickets }}</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>In Progress</h3>
+            <p>{{ in_progress }}</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Resolved</h3>
+            <p>{{ resolved }}</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Critical</h3>
+            <p>{{ critical }}</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href="/">
+        <button>Back to Tickets</button>
+    </a>
+
+</body>
+
+</html>

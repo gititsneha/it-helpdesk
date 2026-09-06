@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ticket #{{ ticket.id }}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Ticket Details</h1>
+
+        <p>IT Help Desk</p>
+
+    </header>
+
+
+    <div class="ticket-detail-card">
+
+        <span class="ticket-id">
+            #{{ ticket.id }}
+        </span>
+
+        <h2>{{ ticket.title }}</h2>
+
+
+        <div class="ticket-details">
+
+            <div>
+                <span>Submitted By</span>
+                <strong>{{ ticket.name }}</strong>
+            </div>
+
+            <div>
+                <span>Category</span>
+                <strong>{{ ticket.category }}</strong>
+            </div>
+
+            <div>
+                <span>Priority</span>
+                <strong>{{ ticket.priority }}</strong>
+            </div>
+
+            <div>
+                <span>Status</span>
+                <strong>{{ ticket.status }}</strong>
+            </div>
+
+        </div>
+
+
+        <div class="ticket-description">
+
+            <span>Description</span>
+
+            <p>
+                {{ ticket.description }}
+            </p>
+
+        </div>
+
+
+        {% if role == "admin" %}
+
+        <form method="POST"
+              action="/update-status/{{ ticket.id }}">
+
+            <label>Update Status</label>
+
+            <select name="status">
+
+                <option value="Open"
+                    {% if ticket.status == "Open" %}selected{% endif %}>
+                    Open
+                </option>
+
+                <option value="In Progress"
+                    {% if ticket.status == "In Progress" %}selected{% endif %}>
+                    In Progress
+                </option>
+
+                <option value="Resolved"
+                    {% if ticket.status == "Resolved" %}selected{% endif %}>
+                    Resolved
+                </option>
+
+                <option value="Closed"
+                    {% if ticket.status == "Closed" %}selected{% endif %}>
+                    Closed
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Update Status
+            </button>
+
+        </form>
+
+        {% endif %}
+
+
+        <br>
+
+        <a href="/">
+            <button type="button">
+                Back to Tickets
+            </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
