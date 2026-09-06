@@ -170,3 +170,39 @@ it-helpdesk-aws/
     ├── admin.html
     └── ticket_details.html
 
+APPLICATION PREVIEW :
+
+<img width="781" height="647" alt="Screenshot 2026-09-06 030232" src="https://github.com/user-attachments/assets/fdee7fa3-47a1-4ea6-8719-65dd255d3048" />
+
+<img width="628" height="505" alt="Screenshot 2026-09-06 020634" src="https://github.com/user-attachments/assets/2a19c45a-e61f-4349-a9d1-e9c03645f68c" />
+
+<img width="577" height="450" alt="Screenshot 2026-09-06 020649" src="https://github.com/user-attachments/assets/3da92dd7-9a7d-4de6-a848-380c50242c95" />
+
+<img width="1080" height="486" alt="Screenshot 2026-09-06 030320" src="https://github.com/user-attachments/assets/01b09fb8-cc67-4598-aa27-3341faab34c7" />
+
+DATABASE :
+
+<img width="1505" height="266" alt="Screenshot 2026-09-06 031940" src="https://github.com/user-attachments/assets/2a166b98-807e-4687-884c-e7c722948cd0" />
+
+<img width="893" height="691" alt="Screenshot 2026-09-06 033853" src="https://github.com/user-attachments/assets/d8328dde-0483-4ed5-a671-fb93375c86a0" />
+
+EC2-INSTANCE :
+
+<img width="1581" height="737" alt="edited" src="https://github.com/user-attachments/assets/5fbbc2d3-bc1e-413c-8124-48544a8c63cf" />
+
+SECURITY GROUP :
+
+<img width="1611" height="751" alt="Screenshot 2026-09-06 031909" src="https://github.com/user-attachments/assets/f93f7e1d-2579-4830-a6d6-0fa53f3aaf91" />
+
+CLOUDWATCH MONITORING :
+
+<img width="1131" height="595" alt="Screenshot 2026-09-06 033433" src="https://github.com/user-attachments/assets/12c3648f-27b4-4c96-a6a2-4d9b260e1865" />
+
+
+
+
+
+
+
+
+
