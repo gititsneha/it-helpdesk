@@ -120,6 +120,7 @@ A CloudWatch alarm was configured to monitor CPU utilization. When CPU usage exc
 This provides basic infrastructure monitoring and alerting for the deployed application.
 
 🖥️ Application Flow
+
 User
  │
  ▼
@@ -149,7 +150,9 @@ Admin Dashboard
  ├── View Ticket Statistics
  ├── Update Ticket Status
  └── Delete Tickets
+
 📁 Project Structure
+
 it-helpdesk-aws/
 │
 ├── app.py
